@@ -10,7 +10,7 @@ var paymentForm = document.getElementById('paymentForm')
 
     let amount = document.getElementById('amount').value;
     
-    // Check if the amount is entered
+    
     if (!amount || isNaN(amount)) {
         alert("Please enter a valid amount.");
         return;
@@ -27,7 +27,7 @@ var paymentForm = document.getElementById('paymentForm')
     phoneSpan.textContent = phone;
     currencySpan.textContent = currency;
 
-    // Simulate an API call using a promise
+    
     const paymentPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
 
